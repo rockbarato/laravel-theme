@@ -1,0 +1,27 @@
+{
+    "name": "rockbarato/laravel-theme",
+    "description": "Laravel 5.4 Theme Manager",
+    "keywords": [ "laravel", "theme", "manager", "template", "laravel-5" ],
+	"homepage": "https://github.com/rockbarato/laravel-theme",
+	"type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Felix Ayala",
+            "email": "felix1262@gmail.com",
+            "homepage": "http://felixaya.la"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/rockbarato/laravel-theme/issues"
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ThemeManager\\Switcher\\": "src/ThemeManager/Switcher/"
+        }
+    }
+}
