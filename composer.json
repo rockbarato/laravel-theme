@@ -23,5 +23,6 @@
         "psr-4": {
             "ThemeManager\\Switcher\\": "src/ThemeManager/Switcher/"
         }
-    }
+    },
+    "version": "1.0.0"
 }
