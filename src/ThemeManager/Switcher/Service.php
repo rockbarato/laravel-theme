@@ -27,8 +27,8 @@ class Service {
 	 * Theme Options
 	 */
 	protected $options = [
-		'theme_path' => 'resources/themes',
-		'views_path' => 'views'
+		'theme_path' => 'resources/views/themes',
+		'asset_path' => 'public/themes',
 	];
 	
 	/**
@@ -53,7 +53,7 @@ class Service {
 	 * @return string;
 	 */
 	public function viewPath() {
-		return $this->options['theme_path'] . '/' . $this->name() . '/' . $this->options['views_path'];
+		return $this->options['theme_path'] . '/' . $this->name();
 	}
 	
 	/**
@@ -63,7 +63,7 @@ class Service {
 	 * @return string;
 	 */
 	public function asset($path) {
-		return asset($this->options['theme_path'] . '/' . $this->name() . '/' . $path);
+		return asset($this->options['asset_path'] . '/' . $this->name() . '/' . $path);
 	}
 
 	/**
